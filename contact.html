@@ -9,35 +9,39 @@
                 <label for="input-name">Name</label>
                 <input id="input-name" height="100" type="text" required>
             </div>
-            
+                   
+      
             <div>
-                <label for="input email">Email</label>
-                <input id="input email" type="email" required>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="email" required />
             </div>
             
             <div>
                 <label for="input-phone">Phone number</label>
-                <input id="input-phone" type="number" required>
+                <input id="input-phone" type="number" required />
             </div>
 
             <div>
-                <label for="input status">Status</label>
-                <select id="input status">
+
+                <label for="input-status">Status</label>
+                <select id="input-status">
                     <option value="" hidden>Select</option>
                     <option>janda</option>
                     <option>lg nikah</option>
                     <option>gadis / bujang</option>
+            </select>
             </div>
             
-            </select>
             <div>
+            <label for="input-message">Your message</label>
+            <textarea id="input-message" rows="5" cols="10"></textarea>
+            </div>
 
-            </div>
-            <label form="input-message">Your message</label>
-            <textarea id="inpu-message" rows="5" cols="10"></textarea>
             <div>
-                <button>Submit</button>
-            </div>
+                <button type="button" onclick="submitData()">submit</button>
+             </div>
+
          </form>
+         <script src="contact.js"></script>
     </body>
 </html>
