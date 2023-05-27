@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img src="assets/images/logo.png" alt="dumbways_logo" />
+          </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="#">my project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-title">project name</label>
+              <input type="text" id="input-blog-title" />
+            </div>
+            <div class="start-end-date">
+                <div>
+                    <label for="start-date">start date</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div>
+                    <label for="end-date">end date</label>
+                    <input type="date" id="end-date">
+                </div>
+            </div>
+            <div>
+              <label for="input-blog-content">description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div>
+                <label>Assets used</label>
+                <div class="input-label">
+                  <div>
+                    <input id="html" type="checkbox" /><label for="html">HTML</label>
+                  </div>
+                  <div>
+                    <input id="css" type="checkbox" /><label for="css">CSS</label>
+                  </div>
+                  <div>
+                    <input id="js" type="checkbox" /><label for="js">JavaScript</label>
+                  </div>
+                  <div>
+                    <input id="image" type="checkbox" /><label for="image">Image</label>
+                  </div>
+                </div>
+              </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>attach files</p>
+                  <img src="assets/images/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/images/DUMBWAYS.IMAGE.webp" alt="blog_img" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-delete">Delete Post</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >SAYA SUKA-SAYA SUKA</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+             01 AGUSTUS 2003 | GUSWANDI
+            </div>
+            <p>
+              PERKENALKAN NAMA SAYA GUSWANDI, BIASA DIPANGGIL ANDI.SAYA BERASAL DARI PADANG SUMATRA BARAT.
+              SAYA LULUSAN SMK N 1 LEMBAH MELINTANG, KAB PASAMAN BARAT, PROV SUMATERA BARAT.
+              SAYA TERTARIK MASUK DUMBWAYS,KARENA DISANA KITA DI AJARKAN, DAN JUGA
+              DISALURKAN UNTUK BEKERJA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/blog.js"></script>
+  </body>
+</html>
